@@ -1,0 +1,725 @@
+@media screen and (min-width: 1024px) {
+    #hero-section-contant h1 {
+        font-size: 4rem;
+    }
+
+    #hero-section-contant p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #hero-section {
+        height: 400px;
+    }
+
+    #hero-section-contant {
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    #hero-section-contant h1 {
+        font-size: 3.5rem;
+    }
+
+    #hero-section-contant p {
+        width: 65%;
+        left: 0;
+        top: 40%;
+        position: absolute;
+        font-size: 18px;
+    }
+
+    #hero-section-contant .btn #Explore-btn {
+        width: 25vw;
+    }
+
+
+    #hero-section-image #hero-section-image-shoes {
+        width: 300px;
+        top: 150px;
+        right: 0;
+    }
+
+
+    .first-circle,
+    .second-circle {
+        width: 130px;
+        height: 130px;
+        top: 120px;
+        right: 20%;
+    }
+
+    .second-circle {
+        top: 240px;
+        right: 5%;
+    }
+
+    /* --------- */
+    #card-section {
+        height: 340px;
+    }
+
+    .card {
+        width: 170px;
+        height: 280px;
+    }
+
+    .card-Image img {
+        width: 100%;
+        height: 140px;
+    }
+
+    .card .card-Contant {
+        height: 140px;
+    }
+
+    .card .buybtn {
+        font-size: 15px;
+    }
+
+    /* ----- */
+    #section-of-showcase {
+        width: 100%;
+        height: 250px;
+        padding: 15px;
+    }
+
+    .showcase-contant {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #section-of-showcase .showcase-image {
+        width: 350px;
+        height: 220px;
+        display: none;
+    }
+
+    #section-of-showcase h1 {
+        font-size: 2rem;
+    }
+
+    .showcase-contant ul {
+        font-size: 18px;
+    }
+
+    #categories-section {
+        height: 280px;
+    }
+
+
+    #categories-section .categories-card {
+        width: 220px;
+        height: 240px;
+    }
+
+    #categories-section .categories-card .categories-card-contant .buybtn {
+        font-size: 16px;
+
+    }
+
+    #Reviews-section {
+        height: 120px;
+    }
+
+    #Reviews-section #customer-reviews {
+        height: 110px;
+        gap: 8px;
+
+    }
+
+    #customer-reviews .review {
+        width: 245px;
+        height: 50px;
+        padding: 2px;
+    }
+
+    .review p {
+        font-size: 15px;
+    }
+
+    #delivery-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .delivery-contant-box {
+        width: 100%;
+        height: 100px;
+    }
+
+    #delivery-section video {
+        display: none;
+    }
+
+    #delivery-contant {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #delivery-contant-box {
+        width: 100%;
+    }
+
+    #store-locations #lcn-map {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #logo img {
+        width: 20vw;
+    }
+
+    #hero-section {
+        height: 400px;
+    }
+
+    #hero-section-contant {
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    #hero-section-contant h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-section-contant p {
+        width: 65%;
+        left: 0;
+        top: 40%;
+        position: absolute;
+        font-size: 16px;
+    }
+
+    #hero-section-contant .btn #Explore-btn {
+        width: 35vw;
+        font-size: 16px;
+    }
+
+
+    #hero-section-image #hero-section-image-shoes {
+        width: 200px;
+        top: 190px;
+        right: 0;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .first-circle,
+    .second-circle {
+        width: 80px;
+        height: 80px;
+        top: 160px;
+        right: 20%;
+    }
+
+    .second-circle {
+        top: 260px;
+        right: 5%;
+    }
+
+    /* --------- */
+    #card-section {
+        height: 540px;
+    }
+
+    .card {
+        width: 200px;
+        height: 260px;
+    }
+
+    .card-Image img {
+        width: 100%;
+        height: 140px;
+    }
+
+    .card .card-Contant {
+        height: 140px;
+    }
+
+    .card .buybtn {
+        font-size: 15px;
+    }
+
+    /* ----- */
+    #section-of-showcase {
+        width: 100%;
+        height: 340px;
+        padding: 15px;
+    }
+
+    .showcase-contant {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #section-of-showcase .showcase-image {
+        width: 350px;
+        height: 220px;
+        display: none;
+    }
+
+    #section-of-showcase h1 {
+        font-size: 2rem;
+    }
+
+    .showcase-contant ul {
+        font-size: 18px;
+    }
+
+    #categories-section {
+        height: 280px;
+        flex-wrap: wrap;
+    }
+
+    #categories-section .categories-card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card-Image img {
+        width: 100%;
+    }
+
+    #categories-section .categories-card .categories-card-contant .buybtn {
+        font-size: 16px;
+
+    }
+
+    #categories-section .categories-card .categories-card-contant h4 {
+        font-size: 20px;
+    }
+
+    #categories-section .categories-card .categories-card-contant p {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #categories-section .categories-card .categories-card-contant p span {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    #categories-section .categories-card .categories-card-contant .buybtn {
+        width: 100px;
+        height: 20px;
+        font-size: 16px;
+
+    }
+
+    #Reviews-section {
+        height: 220px;
+    }
+
+    #Reviews-section #customer-reviews {
+        flex-wrap: wrap;
+        height: 180px;
+        gap: 8px;
+
+    }
+
+    #customer-reviews .review {
+        width: 245px;
+        height: 50px;
+        padding: 2px;
+    }
+
+    .review p {
+        font-size: 15px;
+    }
+
+    #delivery-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+
+    .delivery-contant-box {
+        width: 100%;
+        height: 100px;
+    }
+
+    #delivery-section video {
+        display: none;
+    }
+
+    #delivery-contant {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #delivery-contant-box {
+        width: 100%;
+    }
+
+    #store-locations #lcn-map {
+        width: 90%;
+    }
+
+    /* footer */
+    footer {
+        height: 230px;
+        flex-direction: column;
+    }
+
+    footer #footer-contant {
+        width: 100%;
+        padding: 5px;
+        height: 150px;
+    }
+
+
+    footer #footer-contant h5 {
+        font-size: 25px;
+    }
+
+    footer #footer-contant #follow-icons a {
+        font-size: 15px;
+    }
+
+    footer #footer-contant #contact p {
+        font-size: 15px;
+    }
+
+    #contact p a {
+        font-size: 15px;
+    }
+
+    footer #footer-contant #menu a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #searchbar-container {
+        width: 42vw;
+        height: 22px;
+        padding: 2px;
+    }
+
+    header nav {
+        width: 100%;
+        height: 80%;
+    }
+
+    #searchbar-container #searchbar {
+        width: 35vw;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .navbar-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    #logo img {
+        width: 25vw;
+    }
+
+    #hero-section {
+        height: 400px;
+    }
+
+    #hero-section-contant {
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    #hero-section-contant h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero-section-contant p {
+        width: 100%;
+        left: 0;
+        top: 40%;
+        position: absolute;
+        font-size: 16px;
+    }
+
+    #hero-section-contant .btn #Explore-btn {
+        width: 50vw;
+        font-size: 16px;
+    }
+
+
+    #hero-section-image #hero-section-image-shoes {
+        width: 200px;
+        top: 60px;
+        right: 0;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .first-circle,
+    .second-circle {
+        width: 80px;
+        height: 80px;
+        top: 50px;
+        right: 30%;
+    }
+
+    .second-circle {
+        top: 100px;
+        right: 5%;
+    }
+
+    /* card section */
+    #card-section {
+        height: 490px;
+    }
+
+    .card {
+        width: 150px;
+        height: 220px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .card span {
+        font-size: 15px;
+    }
+
+    .card-Image img {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .card .card-Contant {
+        height: 140px;
+    }
+
+    .card .buybtn {
+        height: 20px;
+        font-size: 15px;
+    }
+
+    /* ----- */
+    #section-of-showcase {
+        width: 100%;
+        height: 340px;
+        padding: 15px;
+    }
+
+    .showcase-contant {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #section-of-showcase .showcase-image {
+        width: 350px;
+        height: 220px;
+        display: none;
+    }
+
+    #section-of-showcase h1 {
+        font-size: 1.5rem;
+    }
+
+    .showcase-contant ul {
+        font-size: 17px;
+    }
+
+    .showcase-contant ul span {
+        font-size: 13px;
+    }
+
+    #categories-section {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+
+    #categories-section .categories-card {
+        width: 180px;
+        height: 220px;
+        padding: 5px;
+    }
+
+    .card-Image img {
+        width: 100%;
+    }
+
+    #categories-section .categories-card .categories-card-contant .buybtn {
+        font-size: 16px;
+
+    }
+
+    #categories-section .categories-card .categories-card-contant h4 {
+        font-size: 20px;
+    }
+
+    #categories-section .categories-card .categories-card-contant p {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #categories-section .categories-card .categories-card-contant p span {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    #categories-section .categories-card .categories-card-contant .buybtn {
+        width: 100px;
+        height: 20px;
+        font-size: 16px;
+
+    }
+
+    #Reviews-section {
+        height: 270px;
+    }
+
+    #Reviews-section #customer-reviews {
+        flex-wrap: wrap;
+        height: 190px;
+        gap: 8px;
+
+    }
+
+    #customer-reviews .review {
+        width: 320px;
+        height: 50px;
+        padding: 2px;
+    }
+
+    .review p {
+        font-size: 15px;
+    }
+
+    #delivery-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .delivery-contant-box {
+        width: 100%;
+        height: 100px;
+    }
+
+    .delivery-contant-box h6 {
+        font-size: 20px;
+    }
+
+    .delivery-contant-box h6 p {
+        font-size: 15px;
+    }
+
+    #delivery-section video {
+        display: none;
+    }
+
+    #delivery-contant {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #delivery-contant-box {
+        width: 100%;
+    }
+
+    #location-map {
+        height: 150px;
+    }
+
+    #store-locations #lcn-map {
+        width: 100%;
+        height: 200px;
+    }
+
+    #store-locations {
+        gap: 10px;
+        height: 400px;
+    }
+
+    /* footer */
+    footer {
+        height: 250px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer #footer-contant {
+        width: 100%;
+        padding: 5px;
+        height: 170px;
+    }
+
+
+    footer #footer-contant h5 {
+        font-size: 25px;
+    }
+
+    footer #footer-contant #follow-icons a {
+        font-size: 15px;
+    }
+
+    footer #footer-contant #contact p {
+        font-size: 15px;
+    }
+
+    #contact p a {
+        font-size: 15px;
+    }
+
+
+    footer #footer-contant #menu {
+        width: 80px;
+    }
+
+    footer #footer-contant #menu a {
+        font-size: 15px;
+    }
+}
