@@ -1,7 +1,6 @@
 function toggleNavbar() {
     let navbar = document.querySelector('.navbar');
     let content = document.querySelector('.content');
-
     navbar.classList.toggle("navs");
     content.classList.toggle("content-shifted");
 }
@@ -18,4 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     reviewsSection.appendChild(newReview);
 });
+const hearts = document.querySelectorAll('.love');
+hearts.forEach(hearts =>{
+    hearts.addEventListener("click", () => {
+        hearts.classList.toggle('clicked');
+    });
+});
+
+
+
+
+
 

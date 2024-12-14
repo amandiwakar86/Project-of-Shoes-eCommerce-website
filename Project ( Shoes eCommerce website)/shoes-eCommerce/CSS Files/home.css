@@ -41,7 +41,7 @@ header nav {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rgb(248, 185, 67);
-    background-color:rgba(248, 199, 108, 0.57);
+    background-color: rgba(248, 199, 108, 0.57);
 }
 
 #logo img {
@@ -127,6 +127,8 @@ header nav {
 .navbar-toggle:hover {
     transform: rotate(360deg);
     transition: all 1.50s;
+    border: 1px solid rgb(248, 218, 119);
+
 }
 
 .navbar-toggle span {
@@ -180,7 +182,7 @@ header nav {
 
 #hero-section-contant p {
     font-size: 25px;
-    color: #021a47;
+    color: #113886;
 }
 
 #hero-section-contant .btn {
@@ -200,6 +202,11 @@ header nav {
     color: rgb(255, 253, 253);
     font-size: 1em;
     cursor: pointer;
+}
+
+#hero-section-contant .btn #Explore-btn:hover {
+    background-color: rgb(65, 5, 5);
+
 }
 
 #hero-section-contant .btn #shop-btn {
@@ -319,6 +326,20 @@ header nav {
     position: absolute;
     top: 5px;
     left: 90%;
+    z-index: 99;
+}
+.love {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.clicked {
+    background-color: red;
 }
 
 .card .card-Contant {
@@ -341,7 +362,7 @@ header nav {
 }
 
 .card .buybtn:hover {
-    background-color: #ffffffc3;
+    background-color: #ebe1e1c3;
 }
 
 .card .card-Contant .rate {
