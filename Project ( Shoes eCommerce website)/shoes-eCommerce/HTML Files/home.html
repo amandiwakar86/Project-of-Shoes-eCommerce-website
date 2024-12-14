@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="../CSS Files/responsive.css">
     <title>shoestore.com</title>
-</head> 
+</head>
 
 <body>
     <header>
         <nav>
             <!-- HTML CODE FOR LOGO -->
-            <div id="logo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div id="logo">
                 <img src="../images/logo.png" alt="">
             </div>
             <div id="searchbar-container">
@@ -79,13 +79,13 @@
 
     <!-- HEADING OF SECTION <=================== -->
 
-    <div class="heading">
+    <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <h1>Customer Favourites</h1>
     </div>
 
     <!-- STARTING OF CARTS SECTION <=================-->
 
-    <div id="card-section">
+    <div id="card-section"  data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <!-- FIRST CARD <==========================  -->
         <div class="card">
             <!-- IMAGE OF CART FIRST <=============  -->
@@ -214,7 +214,7 @@
 
         <!-- HEADING OF SECTION <=================== -->
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <h1>Why Choose Us ?</h1>
         </div>
 
@@ -223,9 +223,9 @@
         <div id="section-of-showcase">
             <!-- BACKGROUND IMAGE OF SHOWCASE SECTION <===================-->
 
-            <div class="showcase-image"></div>
+            <div class="showcase-image" data-aos="fade-down-right" data-aos-offset="100" data-aos-easing="ease-in-sine"></div>
             <!-- CONTANT OF SECTION <==========-->
-            <div class="showcase-contant">
+            <div class="showcase-contant" data-aos="fade-down-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                 <h1>Step into Saving: Unbeatable Shoes Deals Await!</h1>
                 <ul>Quality craftsmanship:
                     <span>Each pair is crafted with precision and care, using high-quality materials that ensure
@@ -248,7 +248,7 @@
 
         <!-- HEADING OF SECTION <============= -->
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <h1>Categories</h1>
         </div>
 
@@ -256,7 +256,7 @@
 
         <div id="categories-section">
             <!-- CATEGORIES CARD FIRST <================= -->
-            <div class="categories-card">
+            <div class="categories-card"  data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
                 <div class="categroies-card-image" id="mens-shoes-img"> </div>
                 <div class="categories-card-contant">
                     <h4>Men's Shoes</h4>
@@ -266,7 +266,7 @@
             </div>
             <!-- CATEGORIES CARD SECOND <================= -->
 
-            <div class="categories-card">
+            <div class="categories-card" data-aos="fade-up" data-aos-offset="120" data-aos-easing="ease-in-sine">
                 <div class="categroies-card-image" id="womens-shoes-img"> </div>
                 <div class="categories-card-contant">
                     <h4>Women's Shoes</h4>
@@ -276,7 +276,7 @@
             </div>
             <!-- CATEGORIES CARD THIRD <================= -->
 
-            <div class="categories-card">
+            <div class="categories-card" data-aos="fade-up" data-aos-offset="140" data-aos-easing="ease-in-sine">
                 <div class="categroies-card-image" id="kids-shoes-img"> </div>
                 <div class="categories-card-contant">
                     <h4>Kid's Shoes</h4>
@@ -290,14 +290,14 @@
 
         <!-- HEADING OF SECTION <============= -->
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <h1>Customer Reviews</h1>
         </div>
 
         <!-- Reviews-section  SECTION START <============== -->
 
         <div id="Reviews-section">
-            <div id="customer-reviews">
+            <div id="customer-reviews" data-aos="flip-left" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
                 <div class="review">
                     <p>"Great product!": Customer A</p>
                     <p>Rating: ⭐⭐⭐⭐⭐</p>
@@ -312,8 +312,8 @@
         <!-- =============================== DELIVERY SECTION ============================= -->
 
         <div id="delivery-section">
-            <video autoplay loop src="../videos/delivery video.mp4"></video>
-            <div id="delivery-contant">
+            <video autoplay loop src="../videos/delivery video.mp4" data-aos="zoom-in-right" data-aos-offset="100" data-aos-easing="ease-in-sine"></video>
+            <div id="delivery-contant" data-aos="zoom-in-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 
                 <div class="delivery-contant-box">
                     <h6>1. Fast & Reliable Shipping:</h6>
@@ -343,7 +343,8 @@
         </div>
         <!-- =============================== CUSTOMER SECTION ============================= -->
 
-        <section id="contact-form">
+        <section id="contact-form" data-aos="fade-up"
+        data-aos-duration="2000">
             <h3>Get in Touch</h3>
             <form action="/submit-form" method="post">
                 <label for="name">Name:</label>
@@ -359,13 +360,17 @@
             </form>
         </section>
 
-        <section id="contact-info">
+        <section id="contact-info" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h3>Contact Information</h3>
             <p>Phone: <a href="tel:+1234567890">+91 8630750297</a></p>
             <p>Email: <a href="mailto:support@shoestore.com">support@shoestore.com</a></p>
         </section>
 
-        <section id="store-locations">
+        <section id="store-locations" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <h3>Our Stores</h3>
             <ul>
                 <li>123 Main St, Anystate, INDIA</li>
@@ -380,7 +385,8 @@
             </div>
         </section>
 
-        <section id="faq">
+        <section id="faq" data-aos="fade-up"
+        data-aos-anchor-placement="center-center">
             <h3>Frequently Asked Questions</h3>
             <div class="faq-item">
                 <h3>How do I track my order?</h3>
@@ -396,7 +402,8 @@
 
         <!-- =============================== FOOTER SECTION ============================= -->
 
-        <footer>
+        <footer data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <div id="footer-contant">
 
                 <div id="contact">
