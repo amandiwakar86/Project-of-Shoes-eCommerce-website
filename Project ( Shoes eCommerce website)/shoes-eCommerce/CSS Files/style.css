@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeac41;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===================================-->  NAVIGATION BAR <--====================================== */
+header {
+    width: 100%;
+    height: 70%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+header nav {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(248, 185, 67);
+    background-color: rgba(248, 199, 108, 0.57);
+}
+
+#logo img {
+    width: 12vw;
+    padding: 5px;
+}
+
+#searchbar-container {
+    width: 60vw;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#searchbar-container:hover {
+    border: 1px solid black;
+}
+
+#searchbar-container #searchbar {
+    width: 60vw;
+    height: 27px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.navbar-container {
+    display: flex;
+    z-index: 99;
+}
+
+.navbar {
+    height: 100vh;
+    width: 0;
+    background-color: #e8e5c4da;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid rgb(233, 107, 3);
+    box-shadow: -0px -10px 20px #9e700b;
+}
+
+.navbar a {
+    color: rgb(184, 77, 11);
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 30px 20px 0px 10px;
+    z-index: 999;
+}
+
+.navbar a:hover {
+    color: rgb(167, 123, 13);
+    border-bottom: 1px solid black;
+}
+
+.navbar-toggle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(236, 201, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    z-index: 9999;
+}
+
+.navbar-toggle:hover {
+    transform: rotate(360deg);
+    transition: all 1.50s;
+    border: 1px solid rgb(248, 218, 119);
+
+}
+
+.navbar-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+.contant {
+    margin-left: 250px;
+    padding: 16px;
+}
+
+.navs {
+    width: 200px;
+}
+
+/* ===================================--> Styling of hero-section <--====================================== */
+
+#hero-section {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+
+#hero-section-contant {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* #hero-section-contant p:hover{
+} */
+
+#hero-section-contant h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #ca0f0f;
+    font-family: "Finger Paint";
+}
+
+#hero-section-contant p {
+    font-size: 25px;
+    color: #113886;
+}
+
+#hero-section-contant .btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#hero-section-contant .btn #Explore-btn {
+    width: 15vw;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(96, 3, 3);
+    border: none;
+    color: rgb(255, 253, 253);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#hero-section-contant .btn #Explore-btn:hover {
+    background-color: rgb(65, 5, 5);
+
+}
+
+#hero-section-contant .btn #shop-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #545964;
+    color: white;
+    cursor: pointer;
+}
+
+#hero-section-contant .btn #shop-btn:hover {
+    background-color: #434850;
+
+}
+
+#hero-section-image #hero-section-image-shoes {
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    animation: float ease 3s infinite;
+    filter: drop-shadow(10px 10px 20px #eeb8a5);
+}
+
+#hero-section-image #hero-section-image-shoes:hover {
+    z-index: -3;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.first-circle,
+.second-circle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(123, 127, 241, 0.689);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    top: 80px;
+    right: 20%;
+    box-shadow: (10px 10px 20px #ec541c);
+    z-index: -5;
+}
+
+.second-circle {
+    background-color: rgba(158, 56, 73, 0.689);
+    top: 280px;
+    right: 5%;
+    box-shadow: (10px 10px 20px #ec541c);
+}
+
+
+/* ===================================--> Styling of cards-section <--====================================== */
+
+#card-section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading {
+    font-size: 25px;
+    color: #ca0f0f;
+    text-align: center;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    background-color: #ffffff4b;
+    border-radius: 4px;
+}
+
+.card-Image {
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.741);
+}
+
+.card-Image img {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    filter: drop-shadow(5PX 5PX 10PX rgb(145, 236, 238));
+    transition: all 0.2s;
+}
+
+.card-Image img:hover {
+    transform: scale(1.1);
+}
+
+.card-Image .favourite-icon {
+    position: absolute;
+    top: 5px;
+    left: 90%;
+    z-index: 99;
+}
+.love {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.clicked {
+    background-color: red;
+}
+
+.card .card-Contant {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.card .buybtn {
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #fefdfc;
+}
+
+.card .buybtn:hover {
+    background-color: #ebe1e1c3;
+}
+
+.card .card-Contant .rate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-Contant span {
+    width: 115PX;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===================================--> Styling of section-of-showcase <--====================================== */
+
+#section-of-showcase {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#section-of-showcase .showcase-image {
+    width: 500px;
+    height: 500px;
+    background: url(../images/show-case-image.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.showcase-contant {
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase-contant ul {
+    font-size: 25px;
+    color: rgb(1, 0, 0);
+}
+
+.showcase-contant ul span {
+    font-size: 20px;
+    color: #ca0f0f;
+}
+
+/* ===================================--> Styling of categories-section <--====================================== */
+
+#categories-section {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#categories-section .categories-card {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.204);
+    border-radius: 4px;
+}
+
+.categories-card:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+#categories-section .categories-card .categroies-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+}
+
+#categories-section .categories-card #mens-shoes-img {
+    background: url(../images/men_s_shoes-removebg-preview.png) no-repeat center center;
+    background-size: cover;
+    filter: drop-shadow(3px 3px 3px rgb(19, 18, 18));
+    z-index: -10;
+}
+
+#categories-section .categories-card #womens-shoes-img {
+    background: url(../images/womens\ shoes.webp) no-repeat center center;
+    background-size: cover;
+    filter: drop-shadow(3px 3px 3px rgb(228, 105, 105));
+    z-index: -10;
+}
+
+#categories-section .categories-card #kids-shoes-img {
+    background: url(../images/kids-removebg-preview.png) no-repeat center center;
+    background-size: cover;
+    filter: drop-shadow(3px 3px 3px rgb(211, 203, 203));
+    z-index: -10;
+}
+
+#categories-section .categories-card .categories-card-contant {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+
+#categories-section .categories-card .categories-card-contant h4 {
+    font-size: 25px;
+}
+
+#categories-section .categories-card .categories-card-contant p {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#categories-section .categories-card .categories-card-contant p span {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#categories-section .categories-card .categories-card-contant .buybtn {
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#categories-section .categories-card .categories-card-contant .buybtn:hover {
+    background-color: #ffffffc3;
+}
+
+/* ===================================--> Styling of CUSTOMER REVIEWS <--====================================== */
+
+#Reviews-section {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Reviews-section #customer-reviews {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+#customer-reviews .review {
+    width: 300px;
+    height: 70px;
+    background-color: #e9ecef6d;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+}
+
+#customer-reviews .review:hover {
+    transform: rotateY(15deg);
+}
+
+/* =============================== DELIVERY SECTION =============================  */
+
+#delivery-section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#delivery-section video {
+    width: 500px;
+    height: 400px;
+}
+
+#delivery-contant {
+    width: 450px;
+    height: 400px;
+}
+
+.delivery-contant-box {
+    width: 100%;
+    /* height: 100px; */
+}
+
+.delivery-contant-box h6 {
+    font-size: 25px;
+    color: rgb(1, 0, 0);
+}
+
+.delivery-contant-box p {
+    font-size: 20px;
+    color: #ca0f0f;
+}
+
+/* ===================================--> Styling of CONTACT SECTION  <--====================================== */
+
+section {
+    width: 100%;
+    padding: 1em;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    font-size: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5em 0 0.2em 0;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+#store-locations {
+    width: 100%;
+    height: 500px;
+}
+
+#store-locations #lcn-map {
+    width: 770px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#contact-info,
+#store-locations,
+#faq {
+    margin-top: 2em;
+}
+
+#store-locations ul {
+    list-style: none;
+    padding: 0;
+}
+
+#store-locations li {
+    background: #f4f4f4;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+}
+
+.faq-item h3 {
+    margin-bottom: 0.3em;
+}
+
+/* ===================================--> Styling of FOOTER SECTION  <--====================================== */
+
+
+footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #131010;
+}
+
+footer #footer-contant {
+    width: 90%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer #footer-contant h5 {
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(251, 227, 227);
+}
+
+footer #footer-contant #follow-icons {
+    width: 250px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+footer #footer-contant #follow-icons a {
+    color: rgb(162, 150, 150);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer #footer-contant #contact {
+    width: 300px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+footer #footer-contant #contact p {
+    color: rgb(162, 150, 150);
+    font-size: 20px;
+}
+
+#contact p a {
+    color: rgb(162, 150, 150);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer #footer-contant #menu {
+    width: 250px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+footer #footer-contant #menu a {
+    color: rgb(162, 150, 150);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer p {
+    color: rgb(151, 140, 140);
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style link for amination -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- LINK STYLE SHEET FOR WEBSITE STYLING -->
+    <link rel="stylesheet" href="../CSS Files/style.css">
+    <!-- LINK STYLE SHEET FOR RESPONSIVE WEBSITE -->
+    <link rel="stylesheet" href="../CSS Files/responsive.css">
+    <!-- LINK FONTAWESOME CDN FILE FOR ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>shoestore.com</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- HTML CODE FOR LOGO -->
+            <div id="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div id="searchbar-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="searchbar" placeholder="search">
+            </div>
+            <!-- HTML CODE FOR NAV ( HUMBERGUR ) ICON -->
+            <div class="navbar-container">
+                <div class="navbar-toggle" onclick="toggleNavbar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- LIST OF NAV BAR  -->
+                <div class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#categories-section">Services</a>
+                    <a href="#categories-section">Products</a>
+                    <a href="#">About us</a>
+                    <a href="#contact-form">Contact us</a>
+                    <a href="../HTML Files/account.html">Account</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =============================== HERO SECTION ============================= -->
+
+    <div id="hero-section">
+        <!-- CREATE A SECTION FOR HERO SECTION CONTANT & WE TAKE TWO CHILDRENS IN THIS SECTION FIRST CONTANT AND SECOND IS HERO SECTION IMAGES -->
+        <div id="hero-section-contant" data-aos="fade-right" data-aos-duration="1000">
+            <!-- IN THIS SECTION WE PUT A HEADINF AND A PEROGTAPH AND TWO BUTTONS -->
+            <h1>Discover the future of Shopping</h1>
+            <p>
+                Unleash the power of choice with our exclusive range of premium products. Quality meets convenience,
+                curated just for you. Shop now and transform your lifestyle effortlessly.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta repudiandae veniam autem
+                perspiciatis aperiam, commodi architecto reprehenderit perferendis accusamus.
+            </p>
+            <div class="btn">
+                <!-- BUTOON FOR EXPLORE SOMETHING NEW -->
+                <button id="Explore-btn">Explore New Arrivals</button>
+                <!-- BUTTON FOR SHOPING -->
+                <button id="shop-btn">Shop Now</button>
+            </div>
+        </div>
+        <!-- SECOND SECTION FOR HERO SECTION IMAGES -->
+        <div id="hero-section-image" data-aos="fade-left" data-aos-duration="1000">
+            <img id="hero-section-image-shoes" src="../images/hero-image-2.png" alt="">
+            <div class="first-circle"></div>
+            <div class="second-circle"></div>
+        </div>
+    </div>
+
+    <!-- =============================== CARDS SECTION ============================= -->
+
+    <!-- HEADING OF SECTION <=================== -->
+
+    <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <h1>Customer Favourites</h1>
+    </div>
+
+    <!-- STARTING OF CARTS SECTION <=================-->
+
+    <div id="card-section" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <!-- FIRST CARD <==========================  -->
+        <div class="card">
+            <!-- IMAGE OF CART FIRST <=============  -->
+            <div class="card-Image fav-icon">
+                <!-- <div class="love"></div> -->
+                <div class="favourite-icon"><i id="love1" class="love" class="fa-regular fa-heart favourite" "></i></div>
+                <img src=" ../images/1.jpg-removebg-preview.png" alt="">
+                </div>
+                <!-- CONTANT  OF CART FIRST <============= -->
+
+                <div class="card-Contant">
+                    <h2>Boy's Shoes</h2>
+                    <p>comfortable and soft products</p>
+                    <div class="rating">
+                        <div class="rate-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- PRICES  OF FIRST CART PRODUCTS <============= -->
+
+                    <div class="buy rate">
+                        <span><del> Rs. 750 </del>Rs. 500</span>
+                        <button class="buybtn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- SECOND CARD <=================================== -->
+
+            <div class="card">
+                <!-- IMAGE OF CART SECOND<============= -->
+
+                <div class="card-Image fav-icon">
+                    <div class="favourite-icon"><i id="love2" class="love" class="fa-regular fa-heart"
+                            onclick="favourite()"></i></div>
+                    <img src="../images/2.JPG-removebg-preview.png" alt="">
+                </div>
+                <!-- CONTANT  OF CART SECOND <============= -->
+
+                <div class="card-Contant">
+                    <h2>Boy's Shoes</h2>
+                    <p>comfortable and soft products</p>
+                    <div class="rating">
+                        <div class="rate-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- PRICES  OF SECOND CART PRODUCTS <============= -->
+
+                    <div class="buy rate">
+                        <span><del> Rs. 1200 </del>Rs. 999</span>
+                        <button class="buybtn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD CARD <================================ -->
+
+            <div class="card">
+                <!-- IMAGE OF CART THIRD<============= -->
+
+                <div class="card-Image fav-icon">
+                    <div class="favourite-icon"><i id="love3" class="love" class="fa-regular fa-heart"
+                            onclick="favourite()"></i></div>
+                    <img src="../images/womens shoes.webp" alt="">
+                </div>
+                <!-- CONTANT  OF CART THIRD <============= -->
+
+                <div class="card-Contant">
+                    <h2>NIKE Shoes</h2>
+                    <p>comfortable and soft products</p>
+                    <div class="rating">
+                        <div class="rate-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- PRICES  OF THIRD CART PRODUCTS <============= -->
+
+                    <div class="buy rate">
+                        <span><del> Rs. 1500 </del>Rs. 1300</span>
+                        <button class="buybtn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- FOURTH CARD <=========================== -->
+
+            <div class="card" id="card">
+                <!-- IMAGE OF CART FOURTH<============= -->
+
+                <div class="card-Image fav-icon">
+                    <div class="favourite-icon"><i id="love4" class="love" class="fa-regular fa-heart"
+                            onclick="favourite()"></i></div>
+                    <img src="../images/hero-image-2.png" alt="">
+                </div>
+                <!-- CONTANT  OF CART FOURTH <============= -->
+
+                <div class="card-Contant">
+                    <h2>Boy's Shoes</h2>
+                    <p>comfortable and soft products</p>
+                    <div class="rating">
+                        <div class="rate-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- PRICES  OF FOURTH CART PRODUCTS <============= -->
+
+                    <div class="buy rate">
+                        <span><del> Rs. 800 </del>Rs. 650</span>
+                        <button class="buybtn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================== section-of-showcase ============================= -->
+
+        <!-- HEADING OF SECTION <=================== -->
+
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <h1>Why Choose Us ?</h1>
+        </div>
+
+        <!-- STARTING OF SHOWCASE SECTION <=================== -->
+
+        <div id="section-of-showcase">
+            <!-- BACKGROUND IMAGE OF SHOWCASE SECTION <===================-->
+
+            <div class="showcase-image" data-aos="fade-down-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            </div>
+            <!-- CONTANT OF SECTION <==========-->
+            <div class="showcase-contant" data-aos="fade-down-left" data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
+                <h1>Step into Saving: Unbeatable Shoes Deals Await!</h1>
+                <ul>Quality craftsmanship:
+                    <span>Each pair is crafted with precision and care, using high-quality materials that ensure
+                        durability
+                        and comfort.
+                    </span>
+                </ul>
+                <ul>Latest Trends:
+                    <span> Stay ahead of the fashion curve with our latest designs, inspired by global trends
+                        and customer feedback.</span>
+                </ul>
+                <ul>Unbeatable Prices:
+                    <span>Enjoy premium footwear without breaking the bank. We offer competitive prices and
+                        regular discounts to make your shopping experience even better.</span>
+                </ul>
+            </div>
+        </div>
+
+        <!-- =============================== CATEGORIES SECTION ============================= -->
+
+        <!-- HEADING OF SECTION <============= -->
+
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <h1>Categories</h1>
+        </div>
+
+        <!-- CATEGORIES SECTION START <============== -->
+
+        <div id="categories-section">
+            <!-- CATEGORIES CARD FIRST <================= -->
+            <div class="categories-card" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                <div class="categroies-card-image" id="mens-shoes-img"> </div>
+                <div class="categories-card-contant">
+                    <h4>Men's Shoes</h4>
+                    <p>Subcategories:<span>boats, sneakers, loafers etc.</span></p>
+                    <button class="buybtn">Buy Now</button>
+                </div>
+            </div>
+            <!-- CATEGORIES CARD SECOND <================= -->
+
+            <div class="categories-card" data-aos="fade-up" data-aos-offset="120" data-aos-easing="ease-in-sine">
+                <div class="categroies-card-image" id="womens-shoes-img"> </div>
+                <div class="categories-card-contant">
+                    <h4>Women's Shoes</h4>
+                    <p>Subcategories:<span>heels, flats, sandals etc.</span></p>
+                    <button class="buybtn">Buy Now</button>
+                </div>
+            </div>
+            <!-- CATEGORIES CARD THIRD <================= -->
+
+            <div class="categories-card" data-aos="fade-up" data-aos-offset="140" data-aos-easing="ease-in-sine">
+                <div class="categroies-card-image" id="kids-shoes-img"> </div>
+                <div class="categories-card-contant">
+                    <h4>Kid's Shoes</h4>
+                    <p>Subcategories:<span>boys, girls, infants etc.</span></p>
+                    <button class="buybtn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================== REVIEWS SECTION ============================= -->
+
+        <!-- HEADING OF SECTION <============= -->
+
+        <div class="heading" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <h1>Customer Reviews</h1>
+        </div>
+
+        <!-- Reviews-section  SECTION START <============== -->
+
+        <div id="Reviews-section">
+            <div id="customer-reviews" data-aos="flip-left" data-aos="fade-right" data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
+                <div class="review">
+                    <p>"Great product!": Customer A</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="review">
+                    <p>"Very comfortable shoes.": Customer B</p>
+                    <p>Rating: ⭐⭐⭐⭐</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================== DELIVERY SECTION ============================= -->
+
+        <div id="delivery-section">
+            <video autoplay loop src="../videos/delivery video.mp4" data-aos="zoom-in-right" data-aos-offset="100"
+                data-aos-easing="ease-in-sine"></video>
+            <div id="delivery-contant" data-aos="zoom-in-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+
+                <div class="delivery-contant-box">
+                    <h6>1. Fast & Reliable Shipping:</h6>
+                    <p>Enjoy quick and dependable shipping with every order.Orders are processed within 24 hours of
+                        purchase.</p>
+                </div>
+
+                <div class="delivery-contant-box">
+                    <h6>2. Free Shipping Offers:</h6>
+                    <p>Free standard shipping on all orders over [X amount].Limited-time promotions for
+                        free express shipping.</p>
+                </div>
+
+                <div class="delivery-contant-box">
+                    <h6>3. Multiple Shipping Options:</h6>
+                    <p>Choose from standard, express, or next-day
+                        delivery.Select the best option to suit your needs and budget.</p>
+                </div>
+
+                <div class="delivery-contant-box">
+                    <h6>4. Track Your Order:</h6>
+                    <p>Receive real-time
+                        tracking updates via email or SMS.Easily monitor your package from dispatch to delivery.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- =============================== CUSTOMER SECTION ============================= -->
+
+        <section id="contact-form" data-aos="fade-up" data-aos-duration="2000">
+            <h3>Get in Touch</h3>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="contact-info" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <h3>Contact Information</h3>
+            <p>Phone: <a href="tel:+1234567890">+91 8630750297</a></p>
+            <p>Email: <a href="mailto:support@shoestore.com">support@shoestore.com</a></p>
+        </section>
+
+        <section id="store-locations" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h3>Our Stores</h3>
+            <ul>
+                <li>123 Main St, Anystate, INDIA</li>
+                <li>456 Oak St, Somewhere, INDIA</li>
+                <li>789 Pine St, Everywhere, INDIA</li>
+            </ul>
+            <div id="location-map">
+                <iframe id="lcn-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454244.07146291726!2d78.17802897022537!3d27.194593707128632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397446ae45e29acd%3A0x135bc17bc0224ad1!2sFirozabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1722588136263!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="faq" data-aos="fade-up" data-aos-anchor-placement="center-center">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h3>How do I track my order?</h3>
+                <p>You can track your order using the tracking number provided in your confirmation email.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is your return policy?</h3>
+                <p>We accept returns within 30 days of purchase. Please visit our returns page for more information.</p>
+            </div>
+        </section>
+        <!-- Add more FAQ items as needed -->
+
+
+        <!-- =============================== FOOTER SECTION ============================= -->
+
+        <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div id="footer-contant">
+
+                <div id="contact">
+                    <h5>Contact</h5>
+                    <p>Phone: <a href="tel:+8630750297">+91 8630750297</a></p>
+                    <p>Email: <a href="mailto:support@shoestore.com">support@shoestore.com</a></p>
+                </div>
+
+                <div id="follow-icons">
+                    <h5>Follow</h5>
+                    <a href="">Insragram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">YouTube</a>
+                </div>
+
+                <div id="menu">
+                    <h5>Menu</h5>
+                    <a href="#">Home</a>
+                    <a href="#categories-section">Services</a>
+                    <a href="#categories-section">Products</a>
+                    <a href="#">About us</a>
+                    <a href="#contact-form">Contact us</a>
+                    <a href="../HTML Files/account.html">Account</a>
+                </div>
+            </div>
+            <p>&copy; 2024 Shoe Store. All rights reserved.</p>
+        </footer>
+
+
+        <!--=================================> end of the code <================================================ -->
+</body>
+<!-- LINK JAVASCRIPT FILES -->
+<script src="../JavaScript Files/app.js">JavaScript</script>
+<!-- java script for animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
