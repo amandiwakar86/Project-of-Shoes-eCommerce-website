@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #eeac41;
+    background-color: hsl(60, 4%, 95%);
 }
 
 html {
@@ -40,8 +40,9 @@ header nav {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid rgb(248, 185, 67);
-    background-color: rgba(248, 199, 108, 0.57);
+    border-bottom: 1px solid rgb(172, 168, 160);
+    background-color: rgb(221, 218, 212);
+    box-shadow: 0px 0px 10px rgb(15, 15, 15);
 }
 
 #logo img {
@@ -82,7 +83,7 @@ header nav {
 .navbar {
     height: 100vh;
     width: 0;
-    background-color: #e8e5c4da;
+    background-color: #e9e9e6a9;
     position: fixed;
     top: 0;
     right: 0;
@@ -92,12 +93,12 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-left: 1px solid rgb(233, 107, 3);
-    box-shadow: -0px -10px 20px #9e700b;
+    border-left: 1px solid rgb(241, 238, 238);
+    box-shadow: -0px -10px 20px #6d6b68;
 }
 
 .navbar a {
-    color: rgb(184, 77, 11);
+    color: rgb(46, 40, 36);
     display: block;
     list-style: none;
     text-decoration: none;
@@ -107,14 +108,15 @@ header nav {
 }
 
 .navbar a:hover {
-    color: rgb(167, 123, 13);
+    color: rgb(71, 62, 56);
     border-bottom: 1px solid black;
+    transition: 0.2s;
 }
 
 .navbar-toggle {
     width: 40px;
     height: 40px;
-    border: 1px solid rgb(236, 201, 86);
+    border: 1px solid rgb(39, 38, 36);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,17 +129,16 @@ header nav {
 .navbar-toggle:hover {
     transform: rotate(360deg);
     transition: all 1.50s;
-    border: 1px solid rgb(248, 218, 119);
-
 }
 
 .navbar-toggle span {
     display: block;
     height: 3px;
     width: 25px;
-    background-color: #fff;
+    background-color: #242121;
     margin: 2px 0;
     transition: 0.4s;
+    box-shadow: 2px 2px 15px rgb(48, 47, 47);
 }
 
 .contant {
@@ -153,7 +154,7 @@ header nav {
 
 #hero-section {
     width: 100%;
-    height: 530px;
+    height: 555px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,14 +301,14 @@ header nav {
     align-items: center;
     justify-content: space-between;
     border: 1px solid white;
-    background-color: #ffffff4b;
+    background-color: #5749494b;
     border-radius: 4px;
 }
 
 .card-Image {
     width: 100%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.741);
+    background-color: #5749494b;
 }
 
 .card-Image img {
@@ -435,7 +436,7 @@ header nav {
     align-items: flex-start;
     justify-content: space-evenly;
     border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.204);
+    background-color: rgba(107, 101, 101, 0.204);
     border-radius: 4px;
 }
 
@@ -533,7 +534,7 @@ header nav {
 #customer-reviews .review {
     width: 300px;
     height: 70px;
-    background-color: #e9ecef6d;
+    background-color: #6f99c26d;
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
